@@ -1,6 +1,29 @@
 <html>
+
 <head>
+    <meta charset="utf-8">
 </head>
+
 <body>
+    <div style="
+    width: 100%;
+    height: 50%;
+    overflow: auto;
+">
+        <p>welcome to chat app </p>
+        <ol id="msg-received">
+        </ol>
+    </div>
+    <div>
+        <form id="chat-form">
+            <input id="msg" type="text" placeholder="message" />
+            <button id="send" type="submit">send</button>
+        </form>
+        <button id="geo-location">send location</button>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="js/libs/moment.js"></script>
 </body>
+
 </html>
